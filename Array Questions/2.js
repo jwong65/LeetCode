@@ -19,6 +19,7 @@ var maxProfit = function(prices) {
         }
     }
     console.log(profit)
+    return profit
 };
 
 // This is to run the file
