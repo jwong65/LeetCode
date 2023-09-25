@@ -10,3 +10,7 @@ var reverseString = function(s) {
 };
 
 k = reverseString(s)
+
+// On site, I used 
+s.reverse()
+// Because you weren't allowed to return the new string instead.
