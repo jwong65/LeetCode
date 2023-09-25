@@ -8,16 +8,17 @@ prices = [7,1,5,3,6,4]
 
 var maxProfit = function(prices) {
     // This is to iterate through each section
-    for (let i=0; i<prices.length; i++){
-        var profit;
-        if (prices[i]>= prices[i+1]){
+    var profit = 0
+    // For the loop it starts at 1 because the first number cannot go backwards and check the previous week
+    for (let i=1; i<prices.length; i++){
+       
+        if (prices[i]>= prices[i-1]){
             // This is to check if the next day is too cheaper than the current day
-            continue
-        }
-        else{
+            // This is a continuing running count of the profit as you sell from one day to the next
+                profit+= (prices[i]-prices[i-1])
         }
     }
-    console.log(prices)
+    console.log(profit)
 };
 
 // This is to run the file
