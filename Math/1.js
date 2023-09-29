@@ -10,13 +10,13 @@ var fizzBuzz = function(n) {
     const string1=[]
 
     for (let i=1; i<=n; i++){
-    if((n%3==0) && (n%5==0)){
+    if((i%3==0) && (i%5==0)){
         string1.push("FizzBuzz")
     }
-    else if (n%3==0){
+    else if (i%3==0){
         string1.push("Fizz")
     }
-    else if(n%5){
+    else if(i%5==0){
         string1.push("Buzz")
     }
     else{
