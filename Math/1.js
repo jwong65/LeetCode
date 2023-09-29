@@ -20,7 +20,7 @@ var fizzBuzz = function(n) {
         string1.push("Buzz")
     }
     else{
-        string1.push(i)
+        string1.push(i.toString())
     }
 }
     return string1
